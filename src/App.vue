@@ -1,15 +1,28 @@
 <script>
-import test from "./components/test.vue";
+import { store } from './store';
+import AppMain from './components/AppMain.vue';
+import AppHeader from './components/AppHeader.vue';
 
 export default {
-  components: {
-    test
+
+  components: { 
+    AppMain,
+    AppHeader,
+  },
+
+  data() {
+    return {
+      store,
+    }
   },
 }
 </script>
 
 <template>
-  <test />
+  <AppHeader />
+  <AppMain />
 </template>
 
-<style lang="scss"></style>
+<style>
+
+</style>
